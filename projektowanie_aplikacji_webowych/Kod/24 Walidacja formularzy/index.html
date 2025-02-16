@@ -31,12 +31,12 @@
                 e.preventDefault();
 
                 if (validateForm()) {
-
                     window.alert('Poprawnie wysłano formularz');
                     console.log('Adres email: ' + emailInput.value);
                     console.log('Hasło: ' + passwordInput.value);
 
                     clearForm();
+
                 }
             });
 
@@ -62,8 +62,8 @@
             }
 
             function clearForm() {
-                emailInput = '';
-                passwordInput = '';
+                emailInput = ' ';
+                passwordInput = ' ';
             }
         };
     </script>
@@ -77,7 +77,7 @@
 
         <label for="password">Hasło</label>
         <input type="password" id="password">
-        <span id="password-error" class="error" hidden>Hasło powinno mieć minimum 5 znaków.</span>
+        <span id="password-error" class="error" hidden>Hasło powinno mieć minimum 8 znaków.</span>
 
         <button>Zapisz</button>
     </form>
